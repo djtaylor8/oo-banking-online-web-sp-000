@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
   attr_accessor :sender, :receiver, :amount, :status
   
@@ -14,6 +16,7 @@ class Transfer
     else 
       false 
     end
+    binding.pry 
   end
   
 end
