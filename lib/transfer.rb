@@ -24,8 +24,8 @@ class Transfer
       puts "Transaction rejected. Please check your account balance"
       @status = "rejected"
     else 
-      @receiver.balance += @amount
-      @sender.balance -= @amount
+      @receiver.balance
+      @sender.balance
       @status = "complete"
     end
     binding.pry 
