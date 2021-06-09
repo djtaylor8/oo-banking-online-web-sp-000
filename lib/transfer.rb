@@ -14,9 +14,9 @@ class Transfer
     if sender.valid? == true && receiver.valid? == true 
       true 
     else 
-      false 
+      false
+      binding.pry 
     end
   end
-  binding.pry 
   
 end
