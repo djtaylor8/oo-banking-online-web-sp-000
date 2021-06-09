@@ -13,10 +13,10 @@ class Transfer
   def valid?(sender, receiver)
     if sender.valid? == true && receiver.valid? == true
       true 
-      binding.pry 
     else 
       false
     end
+    binding.pry 
   end
   
 end
