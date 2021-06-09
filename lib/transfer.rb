@@ -20,6 +20,8 @@ class Transfer
   end
   
   def execute_transaction
+    if @amount > @sender.balance 
+      return ""
     @receiver.balance += @amount
     @sender.balance -= @amount
     @status = "complete"
