@@ -24,7 +24,7 @@ class Transfer
       @receiver.balance += @amount 
       @sender.balance -= @amount
       self.status = "complete"
-    elsif @sender.status == "closed"
+    elsif @sender.valid? == false 
       puts "Transaction rejected. Please check your account balance."
       @status = "rejected"
     end
