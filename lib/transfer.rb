@@ -31,7 +31,8 @@ class Transfer
   
   def reject_transaction
     self.status = "rejected"
-    puts "Transaction rejected. Please check your account balance."
+    "Transaction rejected. Please check your account balance."
+    binding.pry 
   end 
   
 end
