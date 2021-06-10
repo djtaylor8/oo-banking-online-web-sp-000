@@ -28,6 +28,7 @@ class Transfer
       puts "Transaction rejected. Please check your account balance."
       @status = "rejected"
     end
+    puts "Trsn..."
   end 
   
 end
