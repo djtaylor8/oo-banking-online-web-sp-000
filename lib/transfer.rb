@@ -25,7 +25,7 @@ class Transfer
       @sender.balance -= @amount
       @status = "complete"
     else  
-      return "Transaction rejected. Please check your account balance."
+      puts "Transaction rejected. Please check your account balance."
       @status = "rejected"
     end
   end 
