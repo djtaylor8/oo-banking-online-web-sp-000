@@ -38,6 +38,10 @@ class Transfer
     if valid? && self.status == "complete"
       @receiver.balance -= @amount
       @sender.balance += @amount
+      @status = "reversed"
+    else 
+      reject_transaction 
+    end 
   end 
   
 end
