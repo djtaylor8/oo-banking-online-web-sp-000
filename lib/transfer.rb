@@ -28,6 +28,11 @@ class Transfer
       self.status = "rejected"
       puts "Transaction rejected. Please check your account balance."
     end
+  end
+  
+  def reject_transaction
+    self.status = "rejected"
+    puts "Transaction rejected. Please check your account balance."
   end 
   
 end
