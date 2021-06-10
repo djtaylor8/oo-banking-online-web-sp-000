@@ -25,8 +25,7 @@ class Transfer
       @sender.balance -= @amount
       self.status = "complete"
     else 
-      self.status = "rejected"
-      puts "Transaction rejected. Please check your account balance."
+     reject_transaction 
     end
   end
   
